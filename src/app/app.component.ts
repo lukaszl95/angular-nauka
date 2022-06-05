@@ -18,10 +18,10 @@ export class AppComponent {
   portfolioItemList3 = new Array<PortfolioItem>();
   portfolioItemList4 = new Array<PortfolioItem>();
 
-  priceList = new Array<Prices>();
+  /*priceList = new Array<Prices>();
   priceItemList1 = new Array<PriceItem>();
   priceItemList2 = new Array<PriceItem>();
-  priceItemList3 = new Array<PriceItem>();
+  priceItemList3 = new Array<PriceItem>();*/
 
   aboutUsList = new Array<AboutUs>();
 
@@ -92,7 +92,7 @@ export class AppComponent {
 
 
     //PRICES
-    this.priceItemList1.push(
+    /*this.priceItemList1.push(
       new PriceItem('2x', ' option 1'),
       new PriceItem('Free2', ' option 2'),
       new PriceItem('Unlimited', ' option 3'),
@@ -120,7 +120,7 @@ export class AppComponent {
         this.priceItemList2),
       new Prices('Website hosting',
         '$10/month',
-        this.priceItemList3))
+        this.priceItemList3))*/
 
     //ABOUT US
     this.aboutUsList.push(
@@ -172,12 +172,12 @@ class Portfolio {
 class PortfolioItem {
   constructor(public header: string, public text: string, public likes: number, public views: number, public image: string) { }
 }
-class Prices {
+/*class Prices 
   constructor(public title: string, public price: string, public priceItem: Array<PriceItem>) { }
 }
 class PriceItem {
   constructor(public name: string, public text: string) { }
-}
+}*/
 class AboutUs {
   constructor(public name: string, public job: string, public text: string, public image: string) { }
 }

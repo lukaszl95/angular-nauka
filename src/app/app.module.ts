@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './our-services/services.component';
 import { BanerComponent } from './baner/baner.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SecoundBanerComponent } from './secound-baner/secound-baner.component';
@@ -18,6 +18,7 @@ import { FourthBanerComponent } from './fourth-baner/fourth-baner.component';
 import { ContactComponent } from './contact/contact.component';
 import { FifthBanerComponent } from './fifth-baner/fifth-baner.component';
 import { FooterComponent } from './footer/footer.component';
+import { PricesService } from './service/prices.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PricesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

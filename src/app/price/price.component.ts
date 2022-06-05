@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PricesService } from '../service/prices.service';
 
 @Component({
   selector: 'app-price',
@@ -7,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PriceComponent implements OnInit {
 
-  @Input()
+  
   prices: Array<any> = [];
   
-  constructor() { }
+  constructor(private pricesService: PricesService) { 
+    this.pricesService.getPriceListObs().subscribe(prices =>{
+      this.prices = prices;
+    })
+  }
 
   ngOnInit(): void {
   }
