@@ -1,0 +1,43 @@
+header {
+	background-color: #282a2e;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.container::before, .container::after {
+	content: none;
+}
+.logo {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul {
+	align-items: center;
+	justify-content: center;
+    display: flex;
+	float: right;
+	flex-wrap: wrap;
+	padding: 0 30px;
+}
+li {
+	display: inline-block;
+	padding: 20px;
+}
+li:hover a {
+	color: #88c644;
+}
+a {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+}
+img {
+	padding: 40px 10px 40px 0;
+}

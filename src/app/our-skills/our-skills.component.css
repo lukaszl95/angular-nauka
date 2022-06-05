@@ -1,0 +1,23 @@
+.our-skills .parent-match {
+	text-align: -webkit-match-parent;
+}
+.our-skills p {
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.our-skills h2 {
+	font-size: 24px;
+    color: #88c644;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-skills [class*='col-'] {
+    padding: 10px;
+    text-align: center;
+}

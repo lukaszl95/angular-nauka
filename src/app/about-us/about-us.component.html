@@ -1,0 +1,13 @@
+<section class="about-us">
+    <div class="container padding-top-50">
+        <h2 class="padding-bottom-40">About Us</h2>
+        <div class="row padding-bottom-40">
+            <div *ngFor="let person of aboutUs" class="col-3 col-m-6 col-s-12">
+                <img src="{{person.image}}" alt="image">
+                <h3>{{person.name}}</h3>
+                <p id="about-us-p">{{person.job}}</p>
+                <p>{{person.text}}</p>
+            </div>
+        </div>
+    </div>
+</section>

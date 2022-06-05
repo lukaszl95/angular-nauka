@@ -1,0 +1,121 @@
+<section class="portfolio">
+    <div class="container padding-50">
+        <div class="port-text-buttons">
+            <h2>Portfolio</h2>
+        </div>
+        <ul class="nav nav-tabs padding-bottom-40">
+            <ng-container *ngFor="let portfolio of portfolios; let i = index">
+                <li *ngIf="i == 0" class="active">
+                    <a data-toggle="tab" href="#portfolio{{i+1}}"><button
+                            class="btn btn-green">{{portfolio.name}}</button></a>
+                </li>
+                <li *ngIf="i > 0">
+                    <a data-toggle="tab" href="#portfolio{{i+1}}"><button
+                            class="btn btn-green">{{portfolio.name}}</button></a>
+                </li>
+            </ng-container>
+        </ul>
+        <div class="tab-content">
+            <ng-container *ngFor="let portfolio of portfolios; let i = index">
+                <div *ngIf="i == 0" id="portfolio{{i+1}}" class="tab-pane fade in active">
+                    <div class="gallery">
+                        <div *ngFor="let portfolioItem of portfolio.portfolioItem" class="gallery-img">
+                            <div class="overlay">
+                                <div class="layer">
+                                    <h2>{{portfolioItem.header}}</h2>
+                                    <p>{{portfolioItem.text}}</p>
+                                    <div class="gallery-icons">
+                                        <i class="fa fa-comment-o" aria-hidden="true">{{portfolioItem.likes*32}}</i>
+                                        <i class="fa fa-heart-o" aria-hidden="true">{{portfolioItem.views*43}}</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{portfolioItem.image}}" alt="photo">
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="i > 0" id="portfolio{{i+1}}" class="tab-pane fade">
+                    <div class="gallery">
+                        <div *ngFor="let portfolioItem of portfolio.portfolioItem" class="gallery-img">
+                            <div class="overlay">
+                                <div class="layer">
+                                    <h2>{{portfolioItem.header}}</h2>
+                                    <p>{{portfolioItem.text}}</p>
+                                    <div class="gallery-icons">
+                                        <i class="fa fa-comment-o" aria-hidden="true">{{portfolioItem.likes*32}}</i>
+                                        <i class="fa fa-heart-o" aria-hidden="true">{{portfolioItem.views*43}}</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{portfolioItem.image}}" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <!--<div id="portfolio2" class="tab-pane fade">
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <div class="overlay">
+                            <div class="layer">
+                                <h2>Clean night sky</h2>
+                                <p>photography</p>
+                                <div class="gallery-icons">
+                                    <i class="fa fa-comment-o" aria-hidden="true"> 53</i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"> 230</i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="http://image.ibb.co/j3vNZb/photo.png" alt="photo">
+                    </div>
+                    <div class="gallery-img">
+                        <div class="overlay">
+                            <div class="layer">
+                                <h2>Clean night sky</h2>
+                                <p>photography</p>
+                                <div class="gallery-icons">
+                                    <i class="fa fa-comment-o" aria-hidden="true"> 53</i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"> 230</i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="http://image.ibb.co/j3vNZb/photo.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio3" class="tab-pane fade">
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <div class="overlay">
+                            <div class="layer">
+                                <h2>Clean night sky</h2>
+                                <p>photography</p>
+                                <div class="gallery-icons">
+                                    <i class="fa fa-comment-o" aria-hidden="true"> 53</i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"> 230</i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="http://image.ibb.co/j3vNZb/photo.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio4" class="tab-pane fade">
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <div class="overlay">
+                            <div class="layer">
+                                <h2>Clean night sky</h2>
+                                <p>photography</p>
+                                <div class="gallery-icons">
+                                    <i class="fa fa-comment-o" aria-hidden="true"> 53</i>
+                                    <i class="fa fa-heart-o" aria-hidden="true"> 230</i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="http://image.ibb.co/j3vNZb/photo.png" alt="photo">
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</section>

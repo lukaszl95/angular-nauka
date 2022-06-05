@@ -1,0 +1,57 @@
+<section class="footer">
+    <div class="container padding-50">
+        <div class="row">
+            <div class="col-4 col-s-12">
+                <h2>Recent tweets</h2>
+                <hr>
+                <i class="fa fa-twitter"></i>
+                <h3>booty, 15.10.2013</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis ultrices massa. Phasellus
+                    laoreet consequat lorem, vel egestas tortor ultricies eu. </p>
+                <i class="fa fa-twitter"></i>
+                <h3> booty, 9.10.2013</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-4 col-s-12">
+                <h2>Recent Posts</h2>
+                <hr>
+                <p>15.10.2013</p>
+                <p>Maecenas et nisl pellentesque, fermentum ante facilisis, aliquet ligula. </p>
+                <p>9.10.2013</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>9.10.2013</p>
+                <p>Aliquam eu leo adipiscing, imperdiet arcu nec, malesuada lorem.</p>
+            </div>
+            <div class="col-4 col-s-12">
+                <h2>Photo Stream</h2>
+                <hr>
+                <div class="row">
+                    <ng-container *ngFor="let aboutUs of aboutUs; let i = index">
+                        <div *ngIf="i < 8" class="col-3 padding-2">
+                            <img src="{{aboutUs.image}}" alt="photo_1">
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stopka">
+        <div class="container">
+            <div class="logo">
+                <img src="http://image.ibb.co/hkYtNw/circle.png" alt="logo" title="logo">
+                <h2>Parallels</h2>
+            </div>
+            <ul *ngFor="let contact of contact">
+                <li>
+                    <p>{{contact.phone}}</p>
+                </li>
+                <li>
+                    <p>{{contact.email}}</p>
+                </li>
+                <li>
+                    <p>{{contact.skype}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

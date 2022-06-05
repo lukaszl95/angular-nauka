@@ -1,0 +1,21 @@
+<section class="price">
+    <div class="container padding-top-50">
+        <h2 class="padding-bottom-40">Our Price</h2>
+        <div class="row padding-bottom-40">
+            <div *ngFor="let price of prices; let e = even; let i = index" class="col-4 col-s-12">
+                <ul *ngIf="e && i < 5">
+                    <li id="text-size">{{price.title}}</li>
+                    <li id="price-per-month">{{price.price}}</li>
+                    <li *ngFor="let item of price.priceItem"><p>{{item.name}}</p>{{item.text}}</li>
+                    <li><button class="btn btn-green">Purchaise</button></li>
+                </ul>
+                <ul *ngIf="!e && i < 5" id="ul-color">
+                    <li id="text-size">{{price.title}}</li>
+                    <li id="price-per-month">{{price.price}}</li>
+                    <li *ngFor="let item of price.priceItem"><p>{{item.name}}</p>{{item.text}}</li>
+                    <li><button class="btn btn-green">Purchaise</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

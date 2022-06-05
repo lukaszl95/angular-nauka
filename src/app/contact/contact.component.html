@@ -1,0 +1,42 @@
+<section class="contact">
+    <div class="container padding-50">
+        <h2 class="padding-bottom-40">Contact Us</h2>
+        <div class="row">
+            <div class="col-8 padding-right-30 col-s-12">
+                <h3>Mail</h3>
+                <hr>
+                <form>
+                    <div class="col-6">
+                        <div class="form-group margin-right-15">
+                            <input type="text" class="form-control" id="usr" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Mail">
+                        </div>
+                    </div>
+                    <textarea class="form-control" rows="5" id="comment">
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Submit mail" class="float-right  btn btn-green">
+                </form>
+            </div>
+            <div *ngFor="let contact of contact" class="col-3 col-offset-1 col-s-12 col-s-offset-0">
+                <h3>More info</h3>
+                <hr>
+                <ul >
+                    <li>{{contact.phone}}</li>
+                    <li>{{contact.email}}</li>
+                    <li>{{contact.skype}}</li><br>
+                    <li>{{contact.fullName}}</li>
+                    <li>{{contact.street}}</li>
+                    <li>{{contact.zipCode}}</li>
+                    <li class="padding-top-20">
+                        <button class="btn btn-green">Purchaise</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

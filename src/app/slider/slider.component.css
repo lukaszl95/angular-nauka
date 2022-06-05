@@ -1,0 +1,27 @@
+.slider .carousel-caption {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.slider {
+	background: #313338;
+}
+.slide img {
+	max-height: 500px;
+}
+.slider .carousel-control.left, .carousel-control.right {
+	background: none;
+}
+.slider p {
+	font-size: 40px;
+	font-weight: 500;
+}
+.slider h2 {
+	font-size: 60px;
+	font-weight: 300;
+}

@@ -1,0 +1,27 @@
+.about-us img {
+	width: 100%;
+}
+.about-us [class*='col-'] {
+	padding: 10px;
+	text-align: center;
+}
+.about-us h3 {
+	font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.about-us p {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.about-us #about-us-p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.about-us [class*='col-'] {
+    padding: 10px;
+    text-align: center;
+}

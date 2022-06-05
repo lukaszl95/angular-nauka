@@ -1,0 +1,78 @@
+.portfolio .btn {
+	min-width: 104px;
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	background-color: #313338;
+    color: #fff;
+    border-color: #313338;
+}
+.portfolio img {
+    display: block;
+}
+.portfolio .gallery {
+	max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio .gallery-img {
+	position: relative;
+	margin: 5px;
+	border: 1px solid #88c644;
+}
+.portfolio .overlay {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+}
+.gallery-img:hover .overlay {
+	display: block;
+}
+.portfolio .layer {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #282a2e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.layer h2 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.layer p {
+	font-size: 14px;
+	font-weight: 300;
+}
+.nav-tabs {
+	border: none;
+    display: flex;
+    justify-content: center;
+}
+.portfolio li a {
+	padding: 10px 2px;
+    margin: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
+.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover, .nav-tabs>li>a {
+	background: none;
+	border: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, 
+.btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: 5px auto #88c644;
+}
+.gallery-icons {
+	padding: 10px 0;
+    color: #fff;
+}
+.gallery .fa {
+	padding: 0 5px;
+}

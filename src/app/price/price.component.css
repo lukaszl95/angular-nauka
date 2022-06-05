@@ -1,0 +1,39 @@
+.price [class*='col-'] {
+	padding: 0 10px;
+}
+.price ul {
+	background-color: #313338;
+	padding: 10px 0;
+    text-align: center;
+    color: #fff;
+	font-family: "Open Sans";
+	border: 2px solid #313338;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.price li {
+	font-size: 16px;
+    font-weight: 300;
+	padding: 10px 0;
+}
+.price p {
+	display: inline-block;
+	font-weight: 700;
+}
+.price #text-size {
+	font-size: 20px;
+	font-weight: 400;
+}
+.price #price-per-month {
+	font-weight: 600;
+	background: #88c644;
+	color: #fff;
+}
+.price #ul-color {
+	background: #fff;
+	color: #5c5c5c;
+}
+.price #ul-color p {
+	color: #969696;
+}

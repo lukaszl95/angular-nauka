@@ -1,0 +1,23 @@
+.contact h3 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.contact hr {
+	margin-top: 0;
+}
+.contact ul {
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.form-control {
+	background-color: #222327;
+	color: #fff;
+	border-color: #222327;
+}
+.form-control:focus {
+	border-color: #88c644;
+}

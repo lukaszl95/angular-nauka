@@ -1,0 +1,31 @@
+.quote-text .row {
+    display: flex;
+}
+.quote-text [class*='col-'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quote-text p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+.quote-text h3 {
+	text-align: center;
+    color: #b0cd3b;
+}
+.price-quote h2 {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-quote hr {
+	border: 1px solid #424242;
+}
