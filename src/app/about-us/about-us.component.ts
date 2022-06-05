@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AboutUsService } from '../service/about-us.services';
 
 @Component({
   selector: 'app-about-us',
@@ -7,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  @Input()
+
   aboutUs: Array<any> = [];
 
-  constructor() { }
+  constructor(private aboutUsService: AboutUsService) { 
+    this.aboutUsService.getPriceListObs().subscribe(aboutUs =>{
+      this.aboutUs = aboutUs;
+    })
+  }
 
   ngOnInit(): void {
   }

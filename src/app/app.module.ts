@@ -19,6 +19,11 @@ import { ContactComponent } from './contact/contact.component';
 import { FifthBanerComponent } from './fifth-baner/fifth-baner.component';
 import { FooterComponent } from './footer/footer.component';
 import { PricesService } from './service/prices.service';
+import { SliderService } from './service/slider.services';
+import { OurService } from './service/our-services.services';
+import { SkillsService } from './service/skills.services';
+import { AboutUsService } from './service/about-us.services';
+import { ContactService } from './service/contact.services';
 
 @NgModule({
   declarations: [
@@ -43,7 +48,12 @@ import { PricesService } from './service/prices.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [PricesService],
+  providers: [PricesService,
+    SliderService,
+    OurService,
+    SkillsService,
+    AboutUsService,
+    ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
